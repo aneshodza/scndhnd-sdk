@@ -13,8 +13,23 @@ Python SDKs for Swiss second-hand marketplaces.
 | tutti.ch | `tutti-sdk` (`~/private/tutti-sdk`) | Released. Full client, including messaging with a session token |
 | anibis.ch | `anibis-sdk` (`~/private/anibis-sdk`) | Released. Read-only, built on tutti-sdk via anibis's web GraphQL |
 | ricardo.ch | none | **Parked.** The official API shut down on 2026-09-01, and every web/app host is behind a Cloudflare challenge |
+| trovas.ch | `trovas-sdk` (`~/private/trovas-sdk`) | **Local only, not on GitHub yet.** Reads public HTML: search (pages 1–2, per robots.txt) and listing details. No seller names or phone numbers, at least 1 s between requests, honest User-Agent |
 
-Candidates not yet evaluated: Trovas.ch, petitesannonces.ch, Shpock, Galaxus resale, Depop. Ruled out: Vinted (not available in Switzerland) and Facebook Marketplace (login required, scraping forbidden).
+Ruled out (checked 2026-10-29):
+- **petitesannonces.ch:** `robots.txt` disallows search (`/s/`) and blocks `anthropic-ai` entirely. Don't fetch it.
+- **Galaxus resale:** 403 to scripts.
+- **Depop:** Cloudflare 403, even on `robots.txt`.
+- **Shpock:** no Swiss locale.
+- **Vinted:** not available in Switzerland.
+- **Facebook Marketplace:** login required, scraping forbidden.
+
+No other candidates are known yet.
+
+## Open items (need the user)
+
+- `trovas-sdk`: decide whether to publish. If yes, follow the new repo checklist, then add it to the umbrella's dependencies.
+- `scndhnd-sdk`: add the PyPI pending publisher, approve the release PR's CI run (`action_required`) and merge release PR #1.
+- filippofinke/tutti-api #9 (the select fix) is open upstream.
 
 ## Hard rules
 

@@ -115,3 +115,4 @@ def test_get_listing_raises_for_removed_listing(monkeypatch):
 def test_package_exports():
     assert scndhnd_sdk.PLATFORMS == ("tutti", "anibis")
     assert scndhnd_sdk.Listing is listings.Listing
+    assert issubclass(scndhnd_sdk.TuttiError, Exception)

@@ -2,7 +2,8 @@
 
 :func:`search` looks through every marketplace at once and returns
 :class:`Listing` objects in one shape. :func:`get_listing` fetches a single
-listing with its description.
+listing with its description. Both raise :class:`TuttiError` when a
+marketplace can't be reached or rejects the request.
 
 Each marketplace also has its own package, re-exported here for everything
 beyond search:
@@ -16,7 +17,7 @@ beyond search:
 __docformat__ = "restructuredtext"
 
 from anibis_sdk import AnibisClient
-from tutti_sdk import TuttiClient
+from tutti_sdk import TuttiClient, TuttiError
 
 from .listings import PLATFORMS, Listing, Platform, get_listing, parse_price, search
 
@@ -26,6 +27,7 @@ __all__ = [
     "Listing",
     "Platform",
     "TuttiClient",
+    "TuttiError",
     "get_listing",
     "parse_price",
     "search",

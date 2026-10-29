@@ -1,0 +1,178 @@
+{
+ "data": {
+  "searchListingsByQuery": {
+   "__typename": "ListingSearchResult",
+   "query": "brompton",
+   "suggestedCategories": [
+    {
+     "__typename": "Category",
+     "categoryID": "bicycles",
+     "label": "Velos",
+     "parent": {
+      "categoryID": "sportsOutdoors",
+      "label": "Sport & Outdoor"
+     }
+    },
+    {
+     "__typename": "Category",
+     "categoryID": "accessories",
+     "label": "Accessoires & Beauty",
+     "parent": {
+      "categoryID": "clothesAccessories",
+      "label": "Kleidung & Accessoires"
+     }
+    }
+   ],
+   "selectedCategory": null,
+   "filters": [],
+   "galleryListings": [],
+   "listings": {
+    "totalCount": 28,
+    "edges": [
+     {
+      "node": {
+       "__typename": "Listing",
+       "listingID": "83843957",
+       "title": "Diverse Parfüm",
+       "address": null,
+       "formattedPrice": "650.-",
+       "primaryCategory": {
+        "categoryID": "accessories",
+        "label": "Accessoires & Beauty"
+       },
+       "images": [
+        {
+         "rendition": {
+          "src": "https://c.tutti.ch/big/6746942973.jpg"
+         }
+        }
+       ],
+       "timestamp": "2026-10-29T14:57:26+01:00",
+       "postcodeInformation": {
+        "canton": {
+         "name": "Luzern",
+         "shortName": "LU",
+         "circularIcon": {
+          "src": "https://cdn.tutti.ch/cantons/lu.svg"
+         }
+        },
+        "locationName": "Winikon",
+        "postcode": "6235"
+       },
+       "highlighted": false,
+       "thumbnail": {
+        "rendition": {
+         "src": "https://c.tutti.ch/big/6746942973.jpg"
+        }
+       },
+       "formattedSource": null
+      }
+     },
+     {
+      "node": {
+       "__typename": "Listing",
+       "listingID": "83843696",
+       "title": "Brompton C-Line M6R Light Gray",
+       "address": null,
+       "formattedPrice": "1'200.-",
+       "primaryCategory": {
+        "categoryID": "bicycles",
+        "label": "Velos"
+       },
+       "images": [
+        {
+         "rendition": {
+          "src": "https://c.tutti.ch/big/4153523419.jpg"
+         }
+        },
+        {
+         "rendition": {
+          "src": "https://c.tutti.ch/big/9381939698.jpg"
+         }
+        }
+       ],
+       "timestamp": "2026-10-29T14:43:05+01:00",
+       "postcodeInformation": {
+        "canton": {
+         "name": "Waadt",
+         "shortName": "VD",
+         "circularIcon": {
+          "src": "https://cdn.tutti.ch/cantons/vd.svg"
+         }
+        },
+        "locationName": "Lausanne",
+        "postcode": "1004"
+       },
+       "highlighted": false,
+       "thumbnail": {
+        "rendition": {
+         "src": "https://c.tutti.ch/big/4153523419.jpg"
+        }
+       },
+       "formattedSource": null
+      }
+     },
+     {
+      "node": {
+       "__typename": "Listing",
+       "listingID": "83833777",
+       "title": "Brompton 3-Gang / 3 vitesses",
+       "address": null,
+       "formattedPrice": "750.-",
+       "primaryCategory": {
+        "categoryID": "bicycles",
+        "label": "Velos"
+       },
+       "images": [
+        {
+         "rendition": {
+          "src": "https://c.tutti.ch/big/7244932535.jpg"
+         }
+        },
+        {
+         "rendition": {
+          "src": "https://c.tutti.ch/big/1954373272.jpg"
+         }
+        },
+        {
+         "rendition": {
+          "src": "https://c.tutti.ch/big/1330123961.jpg"
+         }
+        },
+        {
+         "rendition": {
+          "src": "https://c.tutti.ch/big/0321006966.jpg"
+         }
+        }
+       ],
+       "timestamp": "2026-10-28T21:13:45+01:00",
+       "postcodeInformation": {
+        "canton": {
+         "name": "Waadt",
+         "shortName": "VD",
+         "circularIcon": {
+          "src": "https://cdn.tutti.ch/cantons/vd.svg"
+         }
+        },
+        "locationName": "Lausanne",
+        "postcode": "1005"
+       },
+       "highlighted": false,
+       "thumbnail": {
+        "rendition": {
+         "src": "https://c.tutti.ch/big/7244932535.jpg"
+        }
+       },
+       "formattedSource": null
+      }
+     }
+    ],
+    "pageInfo": {
+     "hasNextPage": false,
+     "endCursor": "eyJ0IjoxNzkzMzAzNTYwLCJjdiI6ODczNDM5MDkwLCJvIjozMCwic20iOjAsInNhIjpmYWxzZX0="
+    }
+   },
+   "searchToken": "Ak6hicm9tcHRvbsCUwMCRlKVwcmljZcLAzQXcwA"
+  }
+ }
+}

@@ -1,0 +1,35 @@
+{
+ "data": {
+  "listing": {
+   "listingID": "83843696",
+   "title": "Brompton C-Line M6R Light Gray",
+   "body": "Condition: excellent\nGearing: 6\nWarranty: 6 months\n\nShipping possible +CHF29.- (bulky goods)\n\nSimilar to\nFaltvelo folding bike Tern Vektron Dahon ",
+   "formattedPrice": "1'200.-",
+   "timestamp": "2026-10-29T14:43:05+01:00",
+   "postcodeInformation": {
+    "canton": {
+     "name": "Waadt",
+     "shortName": "VD",
+     "circularIcon": {
+      "src": "https://cdn.tutti.ch/cantons/vd.svg"
+     }
+    },
+    "locationName": "Lausanne",
+    "postcode": "1004"
+   },
+   "primaryCategory": {
+    "categoryID": "bicycles",
+    "label": "Velos",
+    "parent": {
+     "categoryID": "sportsOutdoors",
+     "label": "Sport & Outdoor"
+    }
+   },
+   "thumbnail": {
+    "rendition": {
+     "src": "https://c.tutti.ch/big/4153523419.jpg"
+    }
+   }
+  }
+ }
+}

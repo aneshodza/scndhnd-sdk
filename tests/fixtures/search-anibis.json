@@ -1,0 +1,144 @@
+{
+ "data": {
+  "searchListingsByQuery": {
+   "__typename": "ListingSearchResult",
+   "query": "brompton",
+   "suggestedCategories": [
+    {
+     "__typename": "Category",
+     "categoryID": "bicycles",
+     "label": "Velos",
+     "parent": {
+      "categoryID": "sportsOutdoors",
+      "label": "Sport & Outdoor"
+     }
+    },
+    {
+     "__typename": "Category",
+     "categoryID": "accessories",
+     "label": "Accessoires & Beauty",
+     "parent": {
+      "categoryID": "clothesAccessories",
+      "label": "Kleidung & Accessoires"
+     }
+    }
+   ],
+   "selectedCategory": null,
+   "filters": [],
+   "galleryListings": [],
+   "listings": {
+    "totalCount": 14,
+    "edges": [
+     {
+      "node": {
+       "__typename": "Listing",
+       "listingID": "1074113353",
+       "title": "Brompton C-Line M6R Light Gray",
+       "address": null,
+       "formattedPrice": "1'200.-",
+       "primaryCategory": {
+        "categoryID": "bicycles",
+        "label": "Velos"
+       },
+       "images": [
+        {
+         "rendition": {
+          "src": "https://c.anibis.ch/big/2266802191.jpg"
+         }
+        },
+        {
+         "rendition": {
+          "src": "https://c.anibis.ch/big/9584396126.jpg"
+         }
+        }
+       ],
+       "timestamp": "2026-10-29T14:44:50+01:00",
+       "postcodeInformation": {
+        "canton": {
+         "name": "Waadt",
+         "shortName": "VD",
+         "circularIcon": {
+          "src": "https://cdn.anibis.ch/cantons/vd.svg"
+         }
+        },
+        "locationName": "Lausanne",
+        "postcode": "1004"
+       },
+       "highlighted": false,
+       "thumbnail": {
+        "rendition": {
+         "src": "https://c.anibis.ch/big/2266802191.jpg"
+        }
+       },
+       "formattedSource": null
+      }
+     },
+     {
+      "node": {
+       "__typename": "Listing",
+       "listingID": "1074105681",
+       "title": "Brompton H6R, tbé, couleur Yusu et noir, avec facture et sac",
+       "address": null,
+       "formattedPrice": "1'150.-",
+       "primaryCategory": {
+        "categoryID": "bicycles",
+        "label": "Velos"
+       },
+       "images": [
+        {
+         "rendition": {
+          "src": "https://c.anibis.ch/big/7098411486.jpg"
+         }
+        },
+        {
+         "rendition": {
+          "src": "https://c.anibis.ch/big/3771769160.jpg"
+         }
+        },
+        {
+         "rendition": {
+          "src": "https://c.anibis.ch/big/6358323248.jpg"
+         }
+        },
+        {
+         "rendition": {
+          "src": "https://c.anibis.ch/big/0457279652.jpg"
+         }
+        },
+        {
+         "rendition": {
+          "src": "https://c.anibis.ch/big/0649200245.jpg"
+         }
+        }
+       ],
+       "timestamp": "2026-10-27T09:38:56+01:00",
+       "postcodeInformation": {
+        "canton": {
+         "name": "Wallis",
+         "shortName": "VS",
+         "circularIcon": {
+          "src": "https://cdn.anibis.ch/cantons/vs.svg"
+         }
+        },
+        "locationName": "Torgon",
+        "postcode": "1899"
+       },
+       "highlighted": false,
+       "thumbnail": {
+        "rendition": {
+         "src": "https://c.anibis.ch/big/7098411486.jpg"
+        }
+       },
+       "formattedSource": null
+      }
+     }
+    ],
+    "pageInfo": {
+     "hasNextPage": false,
+     "endCursor": "eyJ0IjoxNzkzMzAzNTYwLCJjdiI6ODczNDM5MTEyLCJvIjozMCwic20iOjAsInNhIjpmYWxzZX0="
+    }
+   },
+   "searchToken": "Ak6hicm9tcHRvbsCUwMCRlKVwcmljZcLAzQXcwA"
+  }
+ }
+}

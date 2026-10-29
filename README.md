@@ -2,7 +2,7 @@
 
 Python SDKs for Swiss second-hand marketplaces, in one install.
 
-Each marketplace has its own package. `scndhnd-sdk` depends on all of them and re-exports their clients.
+Each marketplace has its own package. `scndhnd-sdk` depends on all of them, re-exports their clients and adds one search across all marketplaces.
 
 | Marketplace | Package | Client | Docs |
 | --- | --- | --- | --- |
@@ -20,6 +20,21 @@ pip install scndhnd-sdk    # or: uv add scndhnd-sdk
 If you need only one marketplace, install its package directly, e.g. `pip install tutti-sdk`.
 
 ## Usage
+
+Search every marketplace at once:
+
+```python
+from scndhnd_sdk import get_listing, search
+
+for listing in search("brompton", max_price=1200):
+    print(listing.platform, listing.price, listing.title, listing.url)
+
+detail = get_listing("tutti", "83843696")  # adds the description
+```
+
+Each call returns the first page per marketplace, newest first, as `Listing` objects with the same fields everywhere. A listing shown on both tutti and anibis is returned once.
+
+For filters beyond price, use a marketplace's own client:
 
 ```python
 from scndhnd_sdk import AnibisClient, TuttiClient

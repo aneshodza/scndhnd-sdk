@@ -50,7 +50,7 @@ Candidates not yet evaluated: Trovas.ch, petitesannonces.ch, Shpock, Galaxus res
   4. Create the environment: `PUT repos/O/R/environments/pypi`.
   5. Push.
   6. The user adds a PyPI pending publisher: project, owner `aneshodza`, repo, workflow `release.yml`, environment `pypi`.
-  7. Squash-merge the release PR.
+  7. Merge the release PR. The user used a merge commit for tutti-sdk.
 - Release PRs are opened by the workflow's own token, so CI doesn't run on them. That's expected.
 
 ## Platform notes

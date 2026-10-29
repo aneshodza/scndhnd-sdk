@@ -67,9 +67,14 @@ def search(
 
 
 def get_listing(platform: Platform, listing_id: str) -> Listing:
-    """Fetch one listing with its description."""
+    """Fetch one listing with its description.
+
+    Raises :class:`LookupError` when the listing no longer exists.
+    """
     with _CLIENTS[platform]() as client:
         raw = client.listings.get(listing_id)
+    if raw is None:
+        raise LookupError(f"{platform} listing {listing_id} not found")
     return _to_listing(platform, raw, description=raw.get("body"))
 
 

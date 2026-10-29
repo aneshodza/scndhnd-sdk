@@ -103,6 +103,15 @@ def test_get_listing_includes_description(requests):
     assert isinstance(listing.posted_at, datetime)
 
 
+def test_get_listing_raises_for_removed_listing(monkeypatch):
+    handler = lambda request: httpx.Response(200, json={"data": {"listing": None}})
+    monkeypatch.setitem(
+        listings._CLIENTS, "tutti", lambda: TuttiClient(transport=httpx.MockTransport(handler))
+    )
+    with pytest.raises(LookupError):
+        get_listing("tutti", "1")
+
+
 def test_package_exports():
     assert scndhnd_sdk.PLATFORMS == ("tutti", "anibis")
     assert scndhnd_sdk.Listing is listings.Listing

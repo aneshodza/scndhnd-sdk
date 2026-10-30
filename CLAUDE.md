@@ -28,7 +28,7 @@ No other candidates are known yet.
 ## Open items (need the user)
 
 - `trovas-sdk`: decide whether to publish. If yes, follow the new repo checklist, then add it to the umbrella's dependencies.
-- `scndhnd-sdk`: add the PyPI pending publisher, approve the release PR's CI run (`action_required`) and merge release PR #1.
+- `scndhnd-sdk` stays off PyPI until it covers more marketplaces than tutti.ch and anibis.ch (user, 2026-10-30). Leave release PR #1 unmerged; scndhnd-dashboard pins it by git commit.
 - filippofinke/tutti-api #9 (the select fix) is open upstream.
 
 ## Hard rules
